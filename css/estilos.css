@@ -29,7 +29,8 @@ body > header { /*configurando apariencia de las páginas*/
 
 main { /*configurando apariencia de las páginas*/
     margin: auto;
-    max-width: 67%;
+    width: 67%;
+    max-width: 890px;
     font-size: 0.881rem;
     line-height: 1.3rem;
     margin-bottom: 3.3rem;
@@ -123,28 +124,32 @@ footer, main > h1,main > h4 {
     width: 100%;
     text-align: left;
     height: 68px;
-    padding-left: 14rem;
+    padding-left: 17vw;
     padding-bottom: 2.5rem;
+}
+#footer > nav, #footer > p {
+    max-width: 96rem;
+    margin: auto;
+}
+#footer > nav > ul{
+    margin: 4px;
+    margin-left: -15px;
+    
 }
 #footer > nav > ul > li{
     font-size: 0.9rem;
-    margin-top: -26px;
-    padding-top: 0px;
-    margin-right: 36px;
-    margin-left: -20px;
-    padding-left: 0px;
 }
 
-#footer > small {
+#footer > p > small {
     font-size: 0.7rem;
-    margin: -7px;
+    margin-left: -5px;
 }
 article > footer { /*footer del article*/
     color: black;
     font-size: small;
 
 }
-article > footer > small > a {
+.enlaceTexto {
     color: #942C0B;
     border-bottom: 1px dotted;
 }
@@ -153,21 +158,25 @@ article > footer > small > a {
 main > article >header > figure {
     text-align: center;
     padding: 0px;
-    margin: 0px;
+    margin: auto;
     margin-top: 2.5rem;
     margin-bottom: 2.7rem;
+    width: 49.5vw;
+    max-width: 665px;
 }
 
 main > article >header > figure >iframe{
-    width: 41.5rem;
-    height: 23rem;
+    width: 49.5vw;
+    max-width: 665px;
+    height: 28vw;
+    max-height: 376px;
     border: none;
 }
 
 main > article >header >figure >figcaption {
     text-align: left;
     margin-top: -0.3rem;
-    margin-left: 7rem;
+    margin-left: 0rem;
     font-size: 0.6rem;
 }
 
@@ -195,4 +204,84 @@ section > dl > dt { /*lista con descripción*/
 }
 section > dl > dt, dd {
     padding-left: 2.4rem;
+}
+
+/*Modificando cursos cerámica*/
+
+#anyo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: auto;
+    margin-top: -2px;
+}
+
+#headerCursos > figure > img {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 50vw;
+    max-width:665px;
+}
+
+#headerCursos > p > span{
+    line-height: 2.4rem;
+    font-weight: bold;
+    font-size: 1.62rem;
+}
+
+#headerCursos > p:last-child{
+    margin: auto;
+    margin-top: -10px;
+    width: 49.5vw;
+    max-width: 665px;
+}
+
+/*Dando estilos a la tabla de cursos.html*/
+
+table{
+    margin: auto;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 890px;
+    border-collapse: collapse;
+}
+tfoot> tr > td{
+    text-align: left;
+    font-weight:100;
+    font-size: 0.65rem;
+    border-bottom: 1px black solid;
+    padding: 3px;
+    padding-left: 7px;
+}
+thead > tr:first-child > th{
+    font-weight: unset;
+    font-size: 1.2rem;
+    padding: 4px;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+thead > tr:last-child > th{
+    border-bottom: 1px black solid;
+    border-collapse:separate;
+    padding: 5px;
+    text-align: left;
+    font-weight: unset;
+    font-size: 0.8rem;
+}
+
+tbody > tr > td {
+    padding: 10px;
+    padding-left: 7px;
+    vertical-align: bottom;
+
+}
+
+tbody > tr > td:first-child{
+    width: 260px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+tbody > tr:nth-child(odd){
+    background-color: #6BDEC8;
 }
