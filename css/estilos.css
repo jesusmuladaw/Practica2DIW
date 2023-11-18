@@ -36,7 +36,7 @@ main { /*configurando apariencia de las páginas*/
     margin-bottom: 3.3rem;
 }
 
-main > article > header > h1{ /*configurando apariencia de las páginas*/
+main > article > header > h1, #formulario > h1{ /*configurando apariencia de las páginas*/
      text-align: center;
      font-size: 2rem;
      margin-top: 3rem;
@@ -284,4 +284,57 @@ tbody > tr > td:first-child{
 
 tbody > tr:nth-child(odd){
     background-color: #6BDEC8;
+}
+
+/*modificando inscripción*/
+
+#formulario {
+    display: flex;
+    margin: auto;
+    width: 56.5vw;
+    max-width: 760px;
+    flex-direction: column;
+}
+#formulario > p{
+    margin-left: 8px;
+}
+form > fieldset:first-child > legend {
+    margin-left: 15px;
+}
+
+form> fieldset:first-child > div {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "n a"
+        "tn ta"
+        "c t"
+        "tc tt"
+        "f cur"
+        "tf tcur";
+}
+.n {grid-area: n;}
+.tn {grid-area: tn;}
+.a {grid-area: a;}
+.ta {grid-area: ta;}
+.c {grid-area: c;}
+.tc {grid-area: tc;}
+.t {grid-area: t;}
+.tt {grid-area: tt;}
+.f {grid-area: f;}
+.tf {grid-area: tf;}
+.cur {grid-area: cur;}
+.tcur {grid-area: tcur;}
+
+form> fieldset:first-child > div > input{
+    padding: 10px;
+}
+form> fieldset:first-child > div{
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+fieldset > legend {
+    font-weight: bold;
+    font-size: 1.2rem;
 }

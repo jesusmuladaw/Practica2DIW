@@ -12,37 +12,40 @@
         <nav>
             <ul>
                 <li><a href="que-es-la-ceramica.html">CERÁMICA</a></li>
-                <li><a href="cursos.html" id="subrayado">CURSOS</a></li>
-                <li><a href="inscripcion-cursos.html">INSCRIPCIÓN</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
+                <li><a href="inscripcion-cursos.html" id="subrayado">INSCRIPCIÓN</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="formulario">
+        <div id="formulario">
             <h1>Inscripción a los cursos</h1>
             <p><small>Los campos marcados con * son obligatorios</small></p>
             <form action="">
                 <fieldset>
                     <legend>Detalles de la inscripción</legend>
-                    <label for="nombre">Nombre *</label>
-                    <input type="text" name="nombre" id="nombre" class="nombre" maxlength="50" required>
-                    <label for="apellidos">Apellidos *</label>
-                    <input type="text" name="apellidos" id="apellidos" class="apellidos" maxlength="50" required>
-                    <label for="email">Correo electrónico *</label>
-                    <input type="email" name="email" id="email" class="email" required>
-                    <label for="tlf">Teléfono *</label>
-                    <input type="tel" name="tlf" id="tlf" class="tlf" required>
-                    <label for="fechaNac">Fecha de nacimiento *</label>
-                    <input type="date" name="fechaNac" id="fechaNac" class="fechaNac" required>
-                    <label for="curso">Curso *</label>
-                    <select name="curso" id="curso" class="curso">
-                        <option value="select">Selecciona el curso</option>
-                        <option value="torno">Torno</option>
-                        <option value="ceramica">Cerámica</option>
-                        <option value="modelado">Modelado</option>
-                        <option value="esmaltes">Esmaltes</option>
-                        <option value="joyeria">Joyería cerámica</option>
-                    </select>
+                    <div>
+                        <label for="nombre" class="n">Nombre *</label>
+                        <input type="text" name="nombre" id="nombre" class="tn" maxlength="50" required>
+                        <label for="apellidos" class="a">Apellidos *</label>
+                        <input type="text" name="apellidos" id="apellidos" class="ta" maxlength="50" required>
+                        <label for="email" class="c">Correo electrónico *</label>
+                        <input type="email" name="email" id="email" class="tc" required>
+                        <label for="tlf" class="t">Teléfono *</label>
+                        <input type="tel" name="tlf" id="tlf" class="tt" required>
+                        <label for="fechaNac" class="f">Fecha de nacimiento *</label>
+                        <input type="date" name="fechaNac" id="fechaNac" class="tf" required>
+                        <label for="curso" class="cur">Curso *</label>
+                        <select name="curso" id="curso" class="tcur">
+                            <option value="select">Selecciona el curso</option>
+                            <option value="torno">Torno</option>
+                            <option value="ceramica">Cerámica</option>
+                            <option value="modelado">Modelado</option>
+                            <option value="esmaltes">Esmaltes</option>
+                            <option value="joyeria">Joyería cerámica</option>
+                        </select>
+                    </div>
+                    
                 </fieldset>
                 <fieldset>
                     <legend>Otras informaciones</legend>
@@ -65,9 +68,9 @@
                     <input type="radio" name="modoPago" id="efectivo">
                     <label for="efectivo">En efectivo</label>
                 </fieldset>
-                <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE EL TALLER. Finalidades: recogida de datos para la inscripción como socio del interesado. Legitimación: Consentimiento del interesado. Destinatarios: No están previstas cesiones de datos a terceros, excepto obligación legal. Derechos: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a info@eltaller.es. Información Adicional: Puede ampliar la información en el enlace de Aviso Legal y Política de privacidad.</p>
+                <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>EL TALLER</strong>. <strong>Finalidades</strong>: recogida de datos para la inscripción como socio del interesado. <strong>Legitimación</strong>: Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a href="mailto:info@eltaller.es" class="enlaceTexto">info@eltaller.es</a>. <strong>Información Adicional</strong>: Puede ampliar la información en el enlace de <a href="enlaceVacio.html" class="enlaceTexto">Aviso Legal</a> y <a href="enlaceVacio.html" class="enlaceTexto">Política de privacidad</a>.</p>
                 <input type="checkbox" id="privacidad" name="privacidad">
-                <label for="privacidad">He leído y acepto la política de privacidad *</label>
+                <label for="privacidad">He leído y acepto la <a href="enlaceVacio.html" class="enlaceTexto">política de privacidad</a> *</label>
                 <input type="submit" name="enviar" id="enviar" value="Inscríbeme">
             </form>
         </div>
