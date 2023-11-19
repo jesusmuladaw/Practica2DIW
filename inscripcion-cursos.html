@@ -8,7 +8,7 @@
 </head>
 <body>
     <header id="headerPaginas">
-        <h1 id="taller"><a href="index.html"><img src="/img/favicon-32x32.png" alt="icon">el taller</a></h1>
+        <h1 id="taller"><a href="index.html">el taller</a></h1>
         <nav>
             <ul>
                 <li><a href="que-es-la-ceramica.html">CERÁMICA</a></li>
@@ -21,7 +21,7 @@
         <div id="formulario">
             <h2>Inscripción a los cursos</h2>
             <p><small>Los campos marcados con * son obligatorios</small></p>
-            <form action="">
+            <form action="formulario.php">
                 <fieldset>
                     <legend>Detalles de la inscripción</legend>
                     <div>
@@ -36,8 +36,8 @@
                         <label for="fechaNac" class="f">Fecha de nacimiento *</label>
                         <input type="date" name="fechaNac" id="fechaNac" class="tf" required>
                         <label for="curso" class="cur">Curso *</label>
-                        <select name="curso" id="curso" class="tcur">
-                            <option value="select">Selecciona el curso</option>
+                        <select name="curso" id="curso" class="tcur" required>
+                            <option value="" disabled selected hidden>Selecciona el curso</option>
                             <option value="torno">Torno</option>
                             <option value="ceramica">Cerámica</option>
                             <option value="modelado">Modelado</option>
@@ -50,8 +50,8 @@
                     <legend>Otras informaciones</legend>
                     <fieldset>
                         <legend>¿Has hecho otros cursos con nosotros? *</legend>
-                        <label for="si"><input type="radio" name="otrosCursos" id="si" value="si">Si</label>
-                        <label for="no"><input type="radio" name="otrosCursos" id="no" value="no">No</label>
+                        <label for="si"><input type="radio" name="otrosCursos" id="si" value="si" required>Si</label>
+                        <label for="no"><input type="radio" name="otrosCursos" id="no" value="no" required>No</label>
                     </fieldset>
                     <label for="comentarioPregunta" id="comentario">¿Quieres comentar o preguntar algo?</label>
                     <textarea name="comentarioPregunta" id="comentarioPregunta" cols="30" rows="10" maxlength="500"></textarea>
@@ -59,9 +59,9 @@
                 <fieldset>
                     <legend>Elige un método de pago *</legend>
                     <div>
-                        <label for="transferencia"><input type="radio" name="modoPago" id="transferencia">Transferencia</label>
-                        <label for="tarjeta"><input type="radio" name="modoPago" id="tarjeta">Tarjeta de débito / crédito</label>
-                        <label for="efectivo"><input type="radio" name="modoPago" id="efectivo">En efectivo</label>
+                        <label for="transferencia"><input type="radio" name="modoPago" id="transferencia" required>Transferencia</label>
+                        <label for="tarjeta"><input type="radio" name="modoPago" id="tarjeta" required>Tarjeta de débito / crédito</label>
+                        <label for="efectivo"><input type="radio" name="modoPago" id="efectivo" required>En efectivo</label>
                     </div>
                     
                 </fieldset>
