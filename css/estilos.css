@@ -36,13 +36,13 @@ main { /*configurando apariencia de las páginas*/
     margin-bottom: 3.3rem;
 }
 
-main > article > header > h1, #formulario > h1{ /*configurando apariencia de las páginas*/
+main > article > header > h2, #formulario > h2{ /*configurando apariencia de las páginas*/
      text-align: center;
      font-size: 2rem;
      margin-top: 3rem;
 }
 
-nav ul { /*configurando apariencia de las páginas*/
+nav > ul { /*configurando apariencia de las páginas*/
     list-style: none;
     padding: 0px;
     margin: 1vw;
@@ -51,7 +51,7 @@ nav ul { /*configurando apariencia de las páginas*/
     font-size: 1.2vw;
 }
 
-nav ul li {
+nav > ul > li {
     margin: 0.6rem;
 }
 
@@ -61,6 +61,7 @@ nav ul li {
     font-weight: bold;
     letter-spacing: -0.14rem;
     padding: 1rem;
+    margin: 0px;
 }
 #taller > a > img{
     width: 25px;
@@ -73,6 +74,7 @@ nav ul li {
     margin-top: -1rem;
     margin-bottom: 3rem;
     margin-left: 3.6rem;
+    text-transform: uppercase;
 }
 #subrayado {
     border-bottom: 2px solid;
@@ -84,17 +86,17 @@ a {
     color: #FFFFFF;
 }
 
-#index main img {
+#index> main> img {
     width: 4.4vw;
     margin-top: 9.7vw;
 }
-#index main h1 {
+#index > main > h1 {
     font-size: 8.2vw;
     margin-top: 3.5vw;
     letter-spacing: -0.5vw;
 
 }
-#index main h4 {
+#index >main> h4 {
     font-size: 2.2vw;
     margin-top: -1vw;
     letter-spacing: 0.35vw;
@@ -104,10 +106,10 @@ a {
 footer, main > h1,main > h4 {
     color: #FFFFFF;
 }
-#footerIndex nav ul li{
+#footerIndex > nav > ul > li{
     font-size: 1vw;
 }
-#footerIndex nav{
+#footerIndex > nav{
     margin-bottom: -0.5vw;
 }
 #footerIndex {
@@ -180,7 +182,7 @@ main > article >header >figure >figcaption {
     font-size: 0.6rem;
 }
 
-h2 {
+h3{
     font-size: 1.4rem;
     padding-bottom: 6px;
     margin-bottom: 0.3rem;
@@ -296,9 +298,14 @@ tbody > tr:nth-child(odd){
     flex-direction: column;
 }
 #formulario > p{
+    margin: 0px;
     margin-left: 8px;
 }
-form > fieldset:first-child > legend {
+
+#formulario > form > fieldset {
+    margin-top: 1rem;
+}
+form > fieldset > legend {
     margin-left: 15px;
 }
 
@@ -312,6 +319,7 @@ form> fieldset:first-child > div {
         "tc tt"
         "f cur"
         "tf tcur";
+    grid-auto-flow: column;
 }
 .n {grid-area: n;}
 .tn {grid-area: tn;}
@@ -327,14 +335,93 @@ form> fieldset:first-child > div {
 .tcur {grid-area: tcur;}
 
 form> fieldset:first-child > div > input{
-    padding: 10px;
+    padding: 12px;
 }
 form> fieldset:first-child > div{
     margin: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 fieldset > legend {
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+form > fieldset:nth-child(2n) > fieldset{
+    margin: auto;
+    margin-top: 2.5rem;
+    height: 6rem;
+    width: 50.5vw;
+    max-width: 680px;
+    display: grid;
+}
+
+form > fieldset:nth-child(2n) {
+    display: flex;
+    flex-direction: column;
+}
+
+form > fieldset:nth-child(2n) > fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+form > fieldset:nth-child(2n) > fieldset > label{
+    margin: 6px;
+    margin-left: -4px;
+    padding-top: 2px;
+}
+
+#comentario {
+    margin: 13px;
+
+}
+
+#comentarioPregunta {
+    display:inline;
+    margin: auto;
+    margin-bottom: 34px;
+    width: 51.7vw;
+    max-width: 700px;
+    height: 180px;
+}
+form > fieldset:nth-child(3n){
+    height: 165px;
+    width: 54.4vw;
+    max-width: 731px;
+}
+
+form > fieldset:nth-child(3n) > div {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    margin-top: 12px;
+}
+
+form > fieldset:nth-child(3n) > div > label {
+    padding-top: 13px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    height: 10.9px;
+}
+
+#enviar {
+    background-color: #942C0B;
+    color: #FFFFFF;
+    border: solid;
+    height: 3rem;
+    width: 8.2rem;
+    text-transform: uppercase;
+    font-size: 0.87rem;
+    margin-top: 10px;
+}
+
+#privacidad {
+    margin-left: 0px;
+    height: 11px;
 }

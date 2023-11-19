@@ -8,7 +8,7 @@
 </head>
 <body>
     <header id="headerPaginas">
-        <div id="taller"><a href="index.html"><img src="/img/favicon-32x32.png" alt="icon">el taller</a></div>
+        <h1 id="taller"><a href="index.html"><img src="/img/favicon-32x32.png" alt="icon">el taller</a></h1>
         <nav>
             <ul>
                 <li><a href="que-es-la-ceramica.html">CERÁMICA</a></li>
@@ -19,7 +19,7 @@
     </header>
     <main>
         <div id="formulario">
-            <h1>Inscripción a los cursos</h1>
+            <h2>Inscripción a los cursos</h2>
             <p><small>Los campos marcados con * son obligatorios</small></p>
             <form action="">
                 <fieldset>
@@ -45,32 +45,29 @@
                             <option value="joyeria">Joyería cerámica</option>
                         </select>
                     </div>
-                    
                 </fieldset>
                 <fieldset>
                     <legend>Otras informaciones</legend>
                     <fieldset>
                         <legend>¿Has hecho otros cursos con nosotros? *</legend>
-                        <input type="radio" name="otrosCursos" id="si" value="si">
-                        <label for="si">Si</label>
-                        <input type="radio" name="otrosCursos" id="no" value="no">
-                        <label for="no">No</label>
+                        <label for="si"><input type="radio" name="otrosCursos" id="si" value="si">Si</label>
+                        <label for="no"><input type="radio" name="otrosCursos" id="no" value="no">No</label>
                     </fieldset>
-                        <p>¿Quieres comentar o preguntar algo?</p>
-                        <input type="textarea" name="comentarioPregunta" id="comentarioPregunta">
+                    <label for="comentarioPregunta" id="comentario">¿Quieres comentar o preguntar algo?</label>
+                    <textarea name="comentarioPregunta" id="comentarioPregunta" cols="30" rows="10" maxlength="500"></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Elige un método de pago *</legend>
-                    <input type="radio" name="modoPago" id="transferencia">
-                    <label for="transferencia">Transferencia</label>
-                    <input type="radio" name="modoPago" id="tarjeta">
-                    <label for="tarjeta">Tarjeta de débito / crédito</label>
-                    <input type="radio" name="modoPago" id="efectivo">
-                    <label for="efectivo">En efectivo</label>
+                    <div>
+                        <label for="transferencia"><input type="radio" name="modoPago" id="transferencia">Transferencia</label>
+                        <label for="tarjeta"><input type="radio" name="modoPago" id="tarjeta">Tarjeta de débito / crédito</label>
+                        <label for="efectivo"><input type="radio" name="modoPago" id="efectivo">En efectivo</label>
+                    </div>
+                    
                 </fieldset>
                 <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>EL TALLER</strong>. <strong>Finalidades</strong>: recogida de datos para la inscripción como socio del interesado. <strong>Legitimación</strong>: Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a href="mailto:info@eltaller.es" class="enlaceTexto">info@eltaller.es</a>. <strong>Información Adicional</strong>: Puede ampliar la información en el enlace de <a href="enlaceVacio.html" class="enlaceTexto">Aviso Legal</a> y <a href="enlaceVacio.html" class="enlaceTexto">Política de privacidad</a>.</p>
-                <input type="checkbox" id="privacidad" name="privacidad">
-                <label for="privacidad">He leído y acepto la <a href="enlaceVacio.html" class="enlaceTexto">política de privacidad</a> *</label>
+                
+                <label for="privacidad"><input type="checkbox" id="privacidad" name="privacidad">He leído y acepto la <a href="enlaceVacio.html" class="enlaceTexto">política de privacidad</a> *</label>
                 <input type="submit" name="enviar" id="enviar" value="Inscríbeme">
             </form>
         </div>
